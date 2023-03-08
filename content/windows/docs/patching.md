@@ -28,7 +28,7 @@ The following example shows a [fluentd Windows ltsc](https://github.com/fluent/f
 
 ![](./images/ecr-image.png)
 
- The output below from `docker image ls` , the size of the fluentd v1.14-windows-ltsc2019-1 is **6.96GB** on disk, but that doesn't mean it downloaded and extracted that amount of data.
+ The output below from `ctr -n k8s.io image ls` , the size of the fluentd v1.14-windows-ltsc2019-1 is **6.96GB** on disk, but that doesn't mean it downloaded and extracted that amount of data.
 
 In practice, during the pull operation only the **compressed 533.05MB** will be downloaded and extracted.
 
